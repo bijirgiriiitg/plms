@@ -1,5 +1,7 @@
 <h1>Parking Lot Management System </h1>
 
+<p align="justify">Developed a parking lot management system using JavaScript, allowing the registration of vehicles with required details. Implemented a responsive user interface using HTML, CSS, and JavaScript, providing an intuitive experience for both desktop and mobile users.</p>
+
 <p align="justify">Parking Lot Management System is a web platform that a car owner can register the vehicles to record all the details of vehicles and the register details can be removed. This system also save the cars in parking lot by saving the car details along with car owner's name.</p> 
 
 <h2>👇 Implementing features like:</h2>
