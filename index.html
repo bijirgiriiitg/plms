@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>WD-MAJOR-JUNE</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header
+      id="header"
+      style="
+        background: repeating-linear-gradient(
+            -45deg,
+            transparent 0,
+            transparent 25%,
+            dodgerblue 0,
+            dodgerblue 50%
+          ),
+          repeating-linear-gradient(
+            45deg,
+            transparent 0,
+            transparent 25%,
+            rgb(62, 13, 208) 0,
+            tomato 50%
+          ),
+          repeating-linear-gradient(
+            transparent 0,
+            transparent 25%,
+            rgb(14, 14, 13) 0,
+            rgb(12, 12, 12) 50%
+          ),
+          rgb(16, 31, 193);
+      "
+    >
+      <div class="container d-flex align-items-center">
+        <h1 class="logo me-auto"><a href="index.html">PLMS</a></h1>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section
+      id="hero"
+      class="d-flex align-items-center"
+      style="
+        background-image: url(./assets/pexels-francis-desjardins-3095713.jpg);
+        background-size: cover;
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h2>
+              Parking Lot Management System involves a network of interconnected
+              devices, sensors, cameras, and parking management software
+              applications to automate various parking processes, including
+              entry and exit control, space allocation, and security monitoring.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <div class="form-container mt-5 text-light">
+        <form class="w-50 mx-auto" id="entryForm">
+          <h5 class="text-center text-black-50">Add Vehicles to Parking Lot</h5>
+          <div class="form-group">
+            <label for="ownerName">Owner Name</label>
+            <input
+              type="text"
+              class="form-control rounded-0 shadow-sm"
+              id="oname"
+              placeholder="Enter Owner Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="vehicleName">Vehicle Name</label>
+            <input
+              type="text"
+              class="form-control rounded-0 shadow-sm"
+              id="vname"
+              placeholder="Enter Your Vehicle Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="vehicleNumber">Vehicle Number</label>
+            <input
+              type="text"
+              class="form-control rounded-0 shadow-sm"
+              id="vnum"
+              placeholder="Enter Your Vehicle Number"
+            />
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label for="entryDate">Entry Date</label>
+              <input
+                type="date"
+                class="form-control rounded-0 shadow-sm text-info"
+                id="endate"
+              />
+            </div>
+            <div class="col-6">
+              <label for="exitDate">Exit Date</label>
+              <input
+                type="date"
+                class="form-control rounded-0 shadow-sm text-info"
+                id="exdate"
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="btn mx-auto d-block mt-5 rounded-0 shadow"
+            id="btn"
+          >
+            Add Vehicle Details
+          </button>
+        </form>
+      </div>
+      <div class="table-container mt-5 mb-3 w-75 mx-auto text-white">
+        <h5 class="text-center"><kbd>List of Vehicles in Parking Lot</kbd></h5>
+        <input
+          type="text"
+          class="w-100 mb-3"
+          id="search"
+          placeholder="Search..."
+        />
+        <table
+          class="table table-sm shadow align-content-center text-black"
+          id="parkingTable"
+        >
+          <thead class="text-break" id="table">
+            <tr>
+              <th scope="col">Owner Name</th>
+              <th scope="col">Vehicle Name</th>
+              <th scope="col">Vehicle Number</th>
+              <th scope="col">Entry Date</th>
+              <th scope="col">Exit Date</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>PLMS</h3>
+              <p>
+                Parking Lot Management System involves a network of
+                interconnected devices, sensors, cameras, and parking management
+                software applications.<br />
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Location</h4>
+              <p>
+                Delhi, Road 535022<br />
+                India <br />
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Contact Info</h4>
+              <p>
+                Phone: +91 7003050778 <br />
+                Email: info@example.com<br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Contact us in our social media networks for more details.</p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="github"><i class="bx bxl-github"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>PLMS</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">Designed by <a>WD-MAJOR-JUNE</a></div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/vehicle.js"></script>
+  </body>
+</html>
