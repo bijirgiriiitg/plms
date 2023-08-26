@@ -14,8 +14,13 @@
 
 <h2>🏄 How to run the project :</h2>
 <hr/>
-
-  Setting Up
+  1. Pre-requisites
+    <ul>
+    <li> HTML </li>
+    <li> CSS </li>
+    <li> JavaScript</li>
+    </ul>
+  2. Setting Up
     <ul>
     <li> Clone the project from github repo </li>
     <li> Run the code through "Live Server"</li>
